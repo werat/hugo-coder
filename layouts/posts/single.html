@@ -41,7 +41,9 @@
 
       <footer>
         {{ partial "posts/series.html" . }}
+        {{ if (eq .Title "Happy ssh agent forwarding for tmux/screen") }}
         {{ partial "posts/disqus.html" . }}
+        {{ end }}
         {{ partial "posts/commento.html" . }}
         {{ partial "posts/utterances.html" . }}
       </footer>
